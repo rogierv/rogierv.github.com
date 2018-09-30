@@ -1,0 +1,18 @@
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  width: 1200px;
+  margin: 120px auto;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 10px auto;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 10px auto;
+}
