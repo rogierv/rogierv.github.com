@@ -1,5 +1,6 @@
 html {
   font-family: 'Source Sans Pro', sans-serif;
+  background-color: #ffffff;
 }
 
 body {
@@ -8,12 +9,13 @@ body {
 }
 
 h1 {
+  color: #5C821A;
   font-size: 60px;
   margin: 10px auto;
 }
 
 h2 {
+  color: #C6D166;
   font-size: 40px;
   margin: 10px auto;
-  color: goldenrod;
 }
