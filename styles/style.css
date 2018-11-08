@@ -77,13 +77,27 @@ p {
   line-height: 145px;
 }
 
-#about-section div {
-  margin-left: 200px;
-  margin-right: 200px;
+.hobbies div {
+  display: inline-block;
 }
 
-#about-section img {
+.hobby img {
   height: 100px;
   width: 100px;
-  margin: 80px;
+  margin: 80px 80px 20px 80px;
+}
+
+.hobby .hobby-description p {
+  visibility: hidden;
+}
+
+.hobby:hover .hobby-description p {
+  visibility: visible;
+}
+
+.attribution {
+  text-align: center;
+  width: 100%;
+  padding-top: 15px;
+  font-size: 15px;
 }

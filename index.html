@@ -4,6 +4,26 @@
   <title>Portfolio</title>
   <link href="styles/style.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+  <!-- <script>  
+    function show() {
+      let welcome = document.getElementById('hobby-description');
+      welcome.style.visibility = 'visible';
+    }
+
+    function hide() {
+      let welcome = document.getElementById('hobby-description');
+      welcome.style.visibility = 'hidden';
+    }
+
+    function init() {
+      let surround = document.getElementsByClassName('hobby');
+      console.log(surround);
+      surround.onmouseover = show;
+      surround.onmouseout = hide;
+    }
+
+    window.onload = init;
+  </script> -->
 </head>
 
 <body>
@@ -39,14 +59,37 @@
     <h1>About me</h1>
     <p>In my spare time I like to...</p>
     <div class="hobbies">
-      <img src="images/chess.svg" alt="Playing Chess">
-      <img src="images/ski.svg" alt="Skiing">
-      <img src="images/trekking.svg" alt="Hiking">
-      <img src="images/cooking.svg" alt="Cooking">
+      <div class="hobby" id="hobby">
+        <img src="images/chess.svg" alt="Playing Chess"><br>
+        <div class="hobby-description">
+          <p>Playing Chess</p>
+        </div>
+      </div>
+      <div class="hobby">
+        <img src="images/ski.svg" alt="Skiing"><br>
+        <div class="hobby-description">
+          <p>Skiing</p>
+        </div>
+      </div>
+      <div class="hobby">
+        <img src="images/trekking.svg" alt="Hiking"><br>
+        <div class="hobby-description">
+          <p>Hiking</p>
+        </div>
+      </div>
+      <div class="hobby">
+        <img src="images/cooking.svg" alt="Cooking"><br>
+        <div class="hobby-description">
+          <p>Cooking</p>
+        </div>
+      </div>
     </div>
   </section>
   <footer>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/"
+    <div class="attribution">Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a>,
+      <a href="https://www.flaticon.com/authors/becris" title="becris">becris</a>,
+      <a href="https://www.flaticon.com/authors/Freepik" title="Freepik">Freepik</a> and
+      <a href="https://www.flaticon.com/authors/mynamepong" title="mynamepong">mynamepong</a> from <a href="https://www.flaticon.com/"
         title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
         title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   </footer>
