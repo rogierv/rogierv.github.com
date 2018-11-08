@@ -10,11 +10,11 @@ nav ul {
   position: fixed;
   font-size: 30px;
   list-style-type: none;
-  margin: 80px;
+  margin: 60px;
 }
 
 nav ul li a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -23,38 +23,67 @@ nav ul li a:hover {
 }
 
 section {
-  display: flex;
+  display: inline-block;
   height: 100%;
   width: 100%;
+  text-align: center;
 }
 
 #welcome-section {
-  background-color: white;
+  background-color: #426E86;
 }
 
 #project-section {
-  background-color: lightsteelblue;
+  background-color: #F9BA32;
 }
 
-#hobbies-section {
-  background-color: aqua;
+#about-section {
+  background-color: #2F3131;
+}
+
+#about-section p {
+  color: #F8F1E5;
 }
 
 footer {
-  background-color: black;
+  background-color: #426E86;
   display: flex;
   height: 5%;
 }
 
 h1 {
-  color: rgb(0, 0, 0);
+  color: #F8F1E5;
   font-weight: 400;
   font-size: 60px;
   margin: 180px auto auto auto;
 }
 
-h2 {
-  color: #C6D166;
-  font-size: 40px;
-  margin: 10px auto;
+p {
+  font-size: 20px;
+}
+
+.projects {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.project-tile div {
+  display: inline-block;
+  background-color: #F8F1E5;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin: 30px 30px 30px 30px;
+  line-height: 145px;
+}
+
+#about-section div {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#about-section img {
+  height: 100px;
+  width: 100px;
+  margin: 80px;
 }
