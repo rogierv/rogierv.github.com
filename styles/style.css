@@ -6,6 +6,10 @@ body {
   margin: auto;
 }
 
+p {
+  margin: 10px;
+}
+
 nav ul {
   position: fixed;
   font-size: 30px;
@@ -31,6 +35,13 @@ section {
 
 #welcome-section {
   background-color: #426E86;
+}
+
+#welcome-section img {
+  height: 200px;
+  width: auto;
+  margin: 50px;
+  border-radius: 10%;
 }
 
 #project-section {
@@ -62,42 +73,60 @@ p {
   font-size: 20px;
 }
 
-.projects {
-  margin-left: 200px;
-  margin-right: 200px;
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.project-tile div {
-  display: inline-block;
+.project-container a {
+  text-decoration: none;
+}
+
+.project-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   background-color: #F8F1E5;
   border-radius: 50%;
   height: 150px;
   width: 150px;
-  margin: 30px 30px 30px 30px;
-  line-height: 145px;
+  margin: 80px 50px 20px 50px;
 }
 
-.hobbies div {
-  display: inline-block;
+.hobby-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.hobby img {
+.hobby-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.hobby-item img {
   height: 100px;
   width: 100px;
-  margin: 80px 80px 20px 80px;
+  margin: 50px 50px 0px 50px;
 }
 
-.hobby .hobby-description p {
+.hobby-item .hobby-item-description p {
   visibility: hidden;
 }
 
-.hobby:hover .hobby-description p {
+.hobby-item:hover .hobby-item-description p {
   visibility: visible;
 }
 
 .attribution {
+  display: flex;
   text-align: center;
+  justify-content: center;
   width: 100%;
-  padding-top: 15px;
+}
+
+.attribution p {
   font-size: 15px;
 }
