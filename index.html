@@ -6,20 +6,22 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
   <!-- <script>  
     function show() {
-      let welcome = document.getElementById('hobby-description');
-      welcome.style.visibility = 'visible';
+      let welcome = document.getElementById('hobby-description-play-chess');
+      welcome.style.display= 'block';
     }
 
     function hide() {
-      let welcome = document.getElementById('hobby-description');
-      welcome.style.visibility = 'hidden';
+      let welcome = document.getElementById('hobby-description-play-chess');
+      welcome.style.display = 'none';
     }
 
     function init() {
-      let surround = document.getElementsByClassName('hobby');
-      console.log(surround);
-      surround.onmouseover = show;
-      surround.onmouseout = hide;
+      let surroundPlayChess = document.getElementById('hobby-play-chess');
+      let surroundSki = document.getElementById('hobby-ski');
+      surroundPlayChess.onmouseover = show;
+      surroundPlayChess.onmouseout = hide;
+      surroundSki.onmouseover = show;
+      surroundSki.onmouseout = hide;
     }
 
     window.onload = init;
@@ -64,31 +66,27 @@
     <p>In my spare time I like to...</p>
     <div class="hobby-container">
       <div class="hobby-item">
-        <img src="images/chess.svg" alt="Playing Chess"><br>
+        <img src="images/chess.svg" alt="Playing Chess">
         <div class="hobby-item-description">
           <p>Play Chess</p>
         </div>
-        <div class="hobby-item-description-fixed">
-          <p>Here will come some text</p>
-        </div>
+        <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rhoncus iaculis libero quis viverra. Nunc consectetur, ipsum non interdum ultricies, justo dui aliquam mauris, nec tempus libero mi sit amet libero. Morbi ac felis eget ex elementum egestas eget in nulla. Vivamus scelerisque massa quis orci mollis, sit amet finibus nunc mattis. Donec rhoncus massa quis mauris fermentum feugiat. Donec tincidunt, mauris ac efficitur pulvinar, ligula elit convallis enim, non tristique quam nunc in nibh. Aliquam ultricies nunc sed sollicitudin posuere.</p>
       </div>
       <div class="hobby-item">
-        <img src="images/ski.svg" alt="Skiing"><br>
+        <img src="images/ski.svg" alt="Skiing">
         <div class="hobby-item-description">
           <p>Ski</p>
         </div>
-        <div class="hobby-item-description-fixed">
-            <p>Here will come some more text</p>
-          </div>
+        <p class="caption">caption 2</p>
       </div>
       <div class="hobby-item">
-        <img src="images/trekking.svg" alt="Hiking"><br>
+        <img src="images/trekking.svg" alt="Hiking">
         <div class="hobby-item-description">
           <p>Hike</p>
         </div>
       </div>
       <div class="hobby-item">
-        <img src="images/cooking.svg" alt="Cooking"><br>
+        <img src="images/cooking.svg" alt="Cooking">
         <div class="hobby-item-description">
           <p>Cook</p>
         </div>
@@ -99,12 +97,12 @@
   <footer>
     <div class="attribution">
       <p>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a>,
-      <a href="https://www.flaticon.com/authors/becris" title="becris">becris</a>,
-      <a href="https://www.flaticon.com/authors/Freepik" title="Freepik">Freepik</a> and
-      <a href="https://www.flaticon.com/authors/mynamepong" title="mynamepong">mynamepong</a> from <a href="https://www.flaticon.com/"
-        title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
-        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
-      </div>     
+        <a href="https://www.flaticon.com/authors/becris" title="becris">becris</a>,
+        <a href="https://www.flaticon.com/authors/Freepik" title="Freepik">Freepik</a> and
+        <a href="https://www.flaticon.com/authors/mynamepong" title="mynamepong">mynamepong</a> from <a href="https://www.flaticon.com/"
+          title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+          title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+    </div>
   </footer>
 </body>
 
