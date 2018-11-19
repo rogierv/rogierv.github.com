@@ -4,106 +4,144 @@
   <title>Portfolio</title>
   <link href="styles/style.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
-  <!-- <script>  
-    function show() {
-      let welcome = document.getElementById('hobby-description-play-chess');
-      welcome.style.display= 'block';
-    }
 
-    function hide() {
-      let welcome = document.getElementById('hobby-description-play-chess');
-      welcome.style.display = 'none';
-    }
-
-    function init() {
-      let surroundPlayChess = document.getElementById('hobby-play-chess');
-      let surroundSki = document.getElementById('hobby-ski');
-      surroundPlayChess.onmouseover = show;
-      surroundPlayChess.onmouseout = hide;
-      surroundSki.onmouseover = show;
-      surroundSki.onmouseout = hide;
-    }
-
-    window.onload = init;
-  </script> -->
 </head>
 
 <body>
   <header>
-    <nav>
+    <div id="logo">Rogier Verkaik</div>
+    <div id="nav">
       <ul>
         <li><a href="#welcome-section">Welcome</a></li>
         <li><a href="#project-section">Projects</a></li>
         <li><a href="#about-section">About me</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
 
   <section id="welcome-section">
     <h1>Welcome!</h1>
-    <p>Please scroll down for my projects and hobbies</p>
+    <h2>Please scroll down for my projects and hobbies</h2>
     <img src="images/rogier.jpg" alt="Profile picture">
   </section>
 
   <section id="project-section">
     <h1>My Projects</h1>
-    <p>These are some of my projects...</p>
+    <h2>These are some of my projects...</h2>
     <div class="project-container">
       <a href="" class="project-item">
-        <div class="project-title">Coming Soon 1</div>
+        <div class="project-title">Coming Soon</div>
       </a>
       <a href="" class="project-item">
-        <div class="project-title">Coming Soon 2</div>
+        <div class="project-title">Coming Soon</div>
       </a>
       <a href="" class="project-item">
-        <div class="project-title">Coming Soon 3</div>
+        <div class="project-title">Coming Soon</div>
       </a>
     </div>
   </section>
 
   <section id="about-section">
     <h1>About me</h1>
-    <p>In my spare time I like to...</p>
+    <h2>In my spare time I like to...</h2>
     <div class="hobby-container">
-      <div class="hobby-item">
+      <div class="hobby-item" id="hobby-item-chess">
         <img src="images/chess.svg" alt="Playing Chess">
         <div class="hobby-item-description">
           <p>Play Chess</p>
         </div>
-        <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rhoncus iaculis libero quis viverra. Nunc consectetur, ipsum non interdum ultricies, justo dui aliquam mauris, nec tempus libero mi sit amet libero. Morbi ac felis eget ex elementum egestas eget in nulla. Vivamus scelerisque massa quis orci mollis, sit amet finibus nunc mattis. Donec rhoncus massa quis mauris fermentum feugiat. Donec tincidunt, mauris ac efficitur pulvinar, ligula elit convallis enim, non tristique quam nunc in nibh. Aliquam ultricies nunc sed sollicitudin posuere.</p>
       </div>
-      <div class="hobby-item">
+      <div class="hobby-item" id="hobby-item-ski">
         <img src="images/ski.svg" alt="Skiing">
         <div class="hobby-item-description">
           <p>Ski</p>
         </div>
-        <p class="caption">caption 2</p>
       </div>
-      <div class="hobby-item">
-        <img src="images/trekking.svg" alt="Hiking">
-        <div class="hobby-item-description">
-          <p>Hike</p>
-        </div>
-      </div>
-      <div class="hobby-item">
+      <div class="hobby-item" id="hobby-item-cook">
         <img src="images/cooking.svg" alt="Cooking">
         <div class="hobby-item-description">
           <p>Cook</p>
         </div>
       </div>
+      <div class="hobby-item" id="hobby-item-hike">
+        <img src="images/trekking.svg" alt="Hiking">
+        <div class="hobby-item-description">
+          <p>Hike</p>
+        </div>
+      </div>
     </div>
   </section>
 
+  <div id="modal-chess" class="modal">
+    <div class="modal-content">
+      <div class="modal-picture">
+        <img src="images/rogier-chess.jpg" height=auto width="300" alt="Playing Chess">
+      </div>
+      <div class="modal-text">
+        <p>
+          In my spare time I am member of <a href="http://www.sv-erasmus.nl/">Chess Club Erasmus</a> in Rotterdam and
+          once a week we gather together to play
+          within the club or competition against other chess clubs.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-ski" class="modal">
+    <div class="modal-content">
+      <div class="modal-picture">
+        <img src="images/rogier-ski.png" height=auto width="300" alt="Skiing">
+      </div>
+      <div class="modal-text">
+        <p>
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-cook" class="modal">
+    <div class="modal-content">
+      <div class="modal-picture">
+        <img src="images/rogier-cooking.jpeg" height=auto width="300" alt="Cooking">
+      </div>
+      <div class="modal-text">
+        <p>
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-hike" class="modal">
+    <div class="modal-content">
+      <div class="modal-picture">
+
+      </div>
+      <div class="modal-text">
+        <p>
+
+        </p>
+      </div>
+    </div>
+  </div>
+
   <footer>
-    <div class="attribution">
-      <p>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a>,
+    <div>© Rogier Verkaik</div>
+    <div>
+      <p>
+        Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a>,
         <a href="https://www.flaticon.com/authors/becris" title="becris">becris</a>,
         <a href="https://www.flaticon.com/authors/Freepik" title="Freepik">Freepik</a> and
         <a href="https://www.flaticon.com/authors/mynamepong" title="mynamepong">mynamepong</a> from <a href="https://www.flaticon.com/"
           title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
-          title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+          title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+      </p>
     </div>
   </footer>
+
+  <script src="scripts/hobby.js"></script>
+
 </body>
 
 </html>
