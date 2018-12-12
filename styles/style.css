@@ -131,7 +131,7 @@ body
 /* MODAL */
 
 /* The Modal (background) */
-.modal {
+body > .modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -145,7 +145,8 @@ body
 }
 
 /* Modal Content/Box */
-.modal-content {
+
+body > .modal > .modal-content {
   background-color: #f8f1e5;
   margin: 15% auto;
   padding: 20px;
@@ -154,13 +155,13 @@ body
   flex-flow: row nowrap;
 }
 
-.modal-text p {
+body > .modal > .modal-content > .modal-text p {
   margin: 0px;
   padding-left: 20px;
   font-size: 20px;
 }
 
-.modal-text p a {
+body > .modal > .modal-content > .modal-text p a {
   text-decoration: none;
   color: #426e86;
 }
